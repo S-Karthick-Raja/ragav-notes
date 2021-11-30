@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Heading Starting Point -->
+    <div class="Top-Heading">
+        <div class="th-left">
+            <span id="menu" onclick="mymenu()" class="material-icons">menu</span>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="Gmail-Icon">
+       </div>
+       <div class="th-middle">
+            <span id="search"  class="material-icons">search</span>
+            <input value="search" type="text" placeholder="Search mail">
+       </div>
+       <div class="th-right">
+            <span class="material-icons">settings</span>
+            <span class="material-icons">account_circle</span>
+       </div>
+    </div>
+    <!-- Heading Ending Point-->
+
+    <!-- Main Body Starting Point -->
+    <div class="main_body">
+
+    <!-- Sidebar Starting point -->
+        <div class="sidebar ">
+            
+            <button onclick="sidebar()" class="sidebar_compose"><span class="material-icons">add</span>Compose</button>
+        
+        <div class="sidebarOptions sidebarOptions_active ">
+            <span class="material-icons">inbox</span> 
+            <h3>Inbox</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">star</span> 
+            <h3>Starred</h3>
+        </div>
+        <div class="sidebarOptions " onclick="sentMsg()">
+            <span class="material-icons">send</span> 
+            <h3>Sent</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">drafts</span> 
+            <h3>Drafts</h3>
+        </div>
+
+        <!-- More -->
+        <div onclick="More_option()" class="sidebarOptions ">
+            <span class="material-icons">keyboard_arrow_down</span>
+            <h3>More</h3>
+        </div>
+
+    <section class="Hide">
+        <div class="sidebarOptions ">
+            <span class="material-icons">label_important</span> 
+            <h3>Important</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">schedule</span> 
+            <h3>Snoozed</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">report</span> 
+            <h3>Spam</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">delete</span> 
+            <h3>Trash</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">chat</span> 
+            <h3>Chats</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">email</span> 
+            <h3>All mail</h3>
+        </div>
+        <div class="sidebarOptions ">
+            <span class="material-icons">schedule_send</span> 
+            <h3>Scheduled</h3>
+        </div>
+    </section>
+        
+        <!-- More Ends -->
+
+    </div>
+    <!-- Sidebar Ending Point -->
+    
+    <!-- Center Content Starting Point -->
+    <div class="emaillist">
+        <div class="emaillist_settings">
+            <div class="emaillist_settingsleft">
+                 <input type="checkbox">
+                 <span class="material-icons">arrow_drop_down</span>
+                 <span class="material-icons">refresh</span>
+            </div>
+        </div>
+
+        <div class="emaillist_section">
+            
+        </div>
+
+        <section class="Message_box">
+                <div class="compose_bg">
+                    <div class="New_message">
+                        <h4>New Message <span onclick="sidebar()" class="material-icons">close</span> </h4>
+                    </div>
+                    <input type="email" placeholder="To" required><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <textarea class="text-box" name="text-box" cols="30" rows="10" placeholder="Write Your Messsage!!!"></textarea><br>
+                    <button class="button" onclick="sent()">send</button>
+            </div>
+        </section>
+        
+    </div>
+    <!-- Center Content Ending Point -->
+    </div>
+    <!-- Main Body Ending Point -->
+    <script src="./sent.js"></script>
+</body>
+</html>
