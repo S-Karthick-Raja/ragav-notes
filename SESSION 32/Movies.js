@@ -76,3 +76,5 @@ export function Movies({
     </Card>
   );
 }
+
+// changed 
